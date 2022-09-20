@@ -18,8 +18,20 @@
         }}
     
         .flex{ display: flex; align-items: center; justify-content: center; text-align: center;}
+        #title{ color: white; height: 25%; font-family: 'Lobster', cursive}
 
+        #Link_title{ font-size: 60px;}
 
+        #HomeButton{ background-color: transparent; color: white; font-size: 40; 
+        margin-top: 50; height: 50%; 
+        border-radius: 30cm; box-sizing: 300px;
+        background-color: rgba(58, 53, 60, 0.621); box-shadow: 100cm; width: auto; height: 1.5cm;  }
+
+        #HomeButton:hover{ cursor: pointer; background-color: rgba(255, 255, 255, 0.561); color: black; border-radius: 30cm;}
+
+        .img{width: 100px;}
+
+        .link1{color: white; background-color: rgba(0, 0, 0, 0.436); border-radius: 500cm; border-radius: 100%;}
 
         /*transizione iniziale*/
         .transi{  
@@ -105,8 +117,72 @@
 
 
 <body>
+    <div class="transi">
+        <div>
+            <a class="flex center" href="mepage.html">
+                <button id="HomeButton" >
+                ⌂ 
+                </button>
+            </a>
+        </div>
+    
+
+    
+        <div id="title" class="flex">
+            <h1 id="Link_title">Link Utili</h1>
+        </div>
+
+        <div class="link">
+
+            <div class="link1">
+            <a class="link1" href="https://www.instagram.com/mattepriaggg_official/">
+                <h1 id="Ig_content" class="flex">Instagram</h1>
+                
+                <div class="flex">
+                <img src="img/ig.png" id="img_ig" class="img">
+                </div>
+            </a>
+            </div>
+                
+                <br>
+                
+            
+            <div class="link1">
+            <a class="link1" href="https://www.youtube.com/channel/UCb_M8TM4BcgQ6TpqM56idbg">
+                <h1 id="yt_content" class="flex">You Tube</h1>
+                
+    
+                <div class="flex">
+                <img src="img/yt.png" id="img_mail" class="img">
+                <br>
+                <br>
+            </a>
+            </div>
 
 
+                
+        
+    
+
+        </div>
+
+
+        <a href="Contattami.html">
+            <button>
+                <div class="svg-wrapper-1 center">
+                  <div class="svg-wrapper">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                      <path fill="none" d="M0 0h24v24H0z"></path>
+                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Contattami</span>
+            </button>
+        </a>    
+
+
+    </div>
 
 </body>
 
