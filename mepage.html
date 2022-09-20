@@ -1,0 +1,135 @@
+<html>
+
+<head>
+    <link rel="shortcut icon" href="img/PR .png" />
+
+    <title>Priamix site - Home</title>
+
+
+    <style type="text/css">
+
+        .sfondo{ animation: animazione_sfondo 100s linear infinite;}
+        @keyframes animazione_sfondo{100%
+        {background-position: 3000px 3000px;
+        }}
+
+        .transi{  
+        font-size: 22px;
+        font-weight: 600;
+        animation: blur 0.5s linear;
+        line-height: 20px;
+        transition: all 0.5s;
+        letter-spacing: 0.3em;
+        }
+
+        @keyframes blur {
+        0% {
+        filter: blur(50px);
+        }
+
+        50% {
+        filter: blur(100px);
+        }
+        }
+
+        .flex{ display: flex; align-items: center; justify-content: center; text-align: center;}
+        .title{height: 25%; font-family: 'Lobster', cursive;}
+        
+
+        .button{ color: blanchedalmond; font-size: 30px; 
+            background-color: #000033;
+            
+            box-shadow: 0px 3px 15px; border-color: transparent; border-radius: 40px; 
+            width: 500px; height: 90;}
+
+    
+            
+        .button:hover{ text-transform: uppercase; color: rgb(172, 172, 172);}
+
+        .button:active {
+            box-shadow: 0 0 0.6em .25em var(--glow-color),
+            0 0 2.5em 2em var(--glow-spread-color),
+            inset 0 0 .5em .25em var(--glow-color);
+            }
+                
+                #b2{ margin-top: 100px;}
+
+
+        #title{ color:white; }
+        #Prsite{font-size: 60px;}
+
+        .button:hover{ cursor: pointer; background-color: rgba(0, 0, 255, 0.35);
+        transition-duration: 0.5s; 
+        transform: scale(1.1)
+        }
+
+
+        #section1{color: azure;}
+
+        .center{align-items: center; justify-content: center; text-align: center;}
+
+        
+
+    
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+
+    <container>
+        <body class="sfondo" background="https://www.galileonet.it/wp-content/uploads/2020/01/627359main1_potw1209a-670.jpg">
+    </body>
+    </container>
+    
+    
+    
+
+    <div class="center transi" >
+
+        
+        <!--title-->
+        <div id="title" class="flex title" >
+
+            <h1 id="Prsite">PRIAMIX SITE</h1>
+     
+        </div>
+
+        <!--button-->
+        <div>
+            <a href="Chi_sono.html">
+                <button id="b2" class="Button">
+                Chi sono
+                </button>
+            </a>
+        </div>
+    
+        <div>
+            <a href="Chi_sono.html">
+                <button id="b2" class="Button">
+                Link utili
+                </button>
+            </a>
+        </div>
+
+    
+        <div>
+            <a href="Contattami.html">
+                <button id="b2" class="Button button3">
+                Contattami
+                </button>
+            </a>
+        </div>
+    
+    
+    
+    </div>
+
+    
+
+</body>
+</html>
