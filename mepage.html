@@ -1,6 +1,8 @@
 <html>
 
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="img/PR .png" />
 
     <title>Priamix site - Home</title>
@@ -67,6 +69,18 @@
         #section1{color: azure;}
 
         .center{align-items: center; justify-content: center; text-align: center;}
+        #SiteMB{ text-align: end; font-size: 20px; height: 0;}
+
+        
+        /*VISUALIZZAZIONE DA MOBILE VERTICALE*/
+        @media (max-width: 480px) {
+
+        .body{ transform:scale(0.8);}
+        #Prsite{ height: 1%;}
+
+
+
+        }
 
         
 
@@ -89,13 +103,15 @@
     
     
 
-    <div class="center transi" >
+    <div class="center transi body" >
 
         
         <!--title-->
         <div id="title" class="flex title" >
 
-            <h1 id="Prsite">PRIAMIX SITE</h1>
+            <h1 id="Prsite">PRIAMIX</h1>
+            <h1 id="SiteMB">SITE</h1>
+            
      
         </div>
 

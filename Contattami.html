@@ -1,5 +1,6 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" href="img/ContactMe.png" />
     
@@ -13,6 +14,8 @@
 
     <style type="text/css">
         
+    
+
         .sfondo{ animation: animazione_sfondo 100s linear infinite;}
         @keyframes animazione_sfondo{100%
         {background-position: -3000px -3000px;
@@ -34,6 +37,7 @@
         
         
         #Ig_content{ color: rgb(211, 225, 164);font-family: 'Lobster', cursive; font-size: 25px; text-align: center; }
+        #Mail_content{color: rgb(211, 225, 164);font-family: 'Lobster', cursive; font-size: 23px; text-align: center;}
         .Ig{color: white; background-color: rgba(0, 0, 0, 0.436); border-radius: 500cm; border-radius: 100%;}
         #img_ig{ width: 100px; }
         #img_mail{ width: 100px; }
@@ -115,6 +119,15 @@
         }
         }
 
+        /*VISUALIZZAZIONE DA MOBILE VERTICALE*/
+        @media (max-width: 480px) {
+
+            .body{ transform:scale(0.8); font-size: 1px;}
+            
+            
+
+        }
+
     </style>
     
 
@@ -122,7 +135,7 @@
 </head>
 
 <body>
-    <div class="transi">
+    <div class="transi body" >
         <div>
             <a class="flex center" href="mepage.html">
                 <button id="HomeButton" >
@@ -153,7 +166,8 @@
             <br>
             
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCHVNGfzHkWFWXKDHqrlzjMHgklPbZmDTSntgKRJKQLRSmKDPStSgqxpWTwkWZTKMCsWpg">
-            <h1 id="Ig_content">Mail (Mattepriaggg.official@gmail.com)</h1>
+            <h1 id="Ig_content">Mail </h1>
+            <h1 id="Mail_content">(Mattepriaggg.official@gmail.com)</h1>
             
 
             <div class="flex">
@@ -163,19 +177,7 @@
             </a>
             </div>
 
-            <a href="Contattami.html">
-                <button>
-                    <div class="svg-wrapper-1 center">
-                      <div class="svg-wrapper">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                          <path fill="none" d="M0 0h24v24H0z"></path>
-                          <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <span>Contattami</span>
-                  </button>
-                </a>
+
             
         </div>
 
