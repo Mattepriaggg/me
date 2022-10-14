@@ -15,7 +15,7 @@
 }
 .menu{ position: fixed; 
     background-color: rgba(255, 255, 255, 0.94); 
-    height: 6%;
+    height: 7%;
     width: 100%;
     margin-top: 10px;
     
@@ -28,7 +28,7 @@
     top: 10%;
 }
 .cont_1{
-    margin-top: 150px;
+    margin-top: 120px;
     font-size: 35px;
     font-family: 'Pacifico', cursive;
     text-shadow: 2px 2px 5px #7a7a7a;
@@ -36,35 +36,52 @@
 .sx{
     float: left;
 }
+.dx{
+    float: right;
+}
 
 
 
 
 #foto1{
     border-radius: 10%;
-    width: 17%;
+    width: 55%;
     margin-left: 60%;
-    margin-top: -390px;
+    margin-left: 30%;
+    margin-top: 40px;
     
 }
 #foto2{
     border-radius: 10%;
-    width: 15%;
+    width: 50%;
     margin-left: 30%;
     margin-top: 40px;
 }
+.foto2_class{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    margin-left: 15%;
+}
+
+/*
+.border{
+    display: flex;
+    border: 1px solid red;
+}
+*/
 
 
 
-
-
+#logoM{
+    width: 2vh;
+}
 #home{
     width: 100%;
     height: 1000px;
     background-color: rgb(235, 235, 235);
 }
 #about{
-    width: 100%;
     height: 1000px;
     background-color: rgb(226, 226, 226);
 }
@@ -86,7 +103,6 @@
 #imgdj{
     width: 20%;
     border-radius: 50%;
-    margin-left: 20%;
 }
 
 
@@ -117,3 +133,22 @@ ul#menu li a {
 
 
 
+@media (max-width: 480px) {
+
+    #foto1{
+        border-radius: 10%;
+        margin-left: 60%;
+        margin-top: 30%;
+        width: 40%;
+        height: 20%;
+        scale: 2;
+    }
+    #foto2{
+        border-radius: 10%;
+        margin-left: 30%;
+        margin-top: 30%;
+        width: 40%;
+        height: 20%;
+        scale: 2;
+    }
+}
