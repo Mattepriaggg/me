@@ -133,7 +133,7 @@ ul#menu li a {
 
 
 
-@media (max-width: 1920px) {
+@media (max-width: 480px) {
 
     #foto1{
         border-radius: 10%;
