@@ -5,7 +5,10 @@
 }
 
 
-
+.logoIn{
+    display: none;
+    animation: alternate;
+}
 
 .center{ display: flex; 
     align-items: center; 
@@ -50,8 +53,18 @@
     display: flex;
     margin-left: 15%;
 }
+
 .fade-in{
-    
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+        transform: translateY(2vh);
+    }
+    100%{
+        opacity: 100%;
+    }
 }
 
 
@@ -166,6 +179,7 @@ ul#menu li a {
         margin-top: 40%;
         width: 70%;
         height: 50%;
+        
     }
     .buttonSocial{
         border-radius: 10px;
