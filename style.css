@@ -49,14 +49,6 @@
     margin-left: 15%;
 }
 
-.button{
-    border-radius: 10px;
-    width: 20vh;
-    border: 2cm;
-    margin-top: 50px;
-}
-
-
 
 
 
@@ -76,9 +68,17 @@
     margin-top: 40px;
 }
 
-#igButton:hover{color: rgb(255, 0, 106); cursor: pointer;}
-#ytButton:hover{color: rgb(255, 0, 0); cursor: pointer;}
-#scButton:hover{color: rgb(255, 89, 0); cursor: pointer;}
+.buttonSocial{
+    border-radius: 10px;
+    width: 50vh;
+    height: 10vh;
+    border:  solid rgb(2, 2, 2);
+    margin-top: 50px;
+
+}
+#igButton:hover{color: rgb(255, 0, 106); cursor: pointer;border:  solid rgb(255, 0, 166);}
+#ytButton:hover{color: rgb(255, 0, 0); cursor: pointer;border:  solid rgb(255, 0, 0);}
+#scButton:hover{color: rgb(255, 89, 0); cursor: pointer;border:  solid rgb(255, 89, 0);}
 
 /*
 .border{
@@ -162,6 +162,12 @@ ul#menu li a {
         margin-top: 40%;
         width: 70%;
         height: 50%;
+    }
+    .button{
+        border-radius: 10px;
+        width: 20vh;
+        border: 2cm;
+        margin-top: 50px;
     }
      
 }
