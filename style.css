@@ -70,8 +70,9 @@
 
 .buttonSocial{
     border-radius: 10px;
-    width: 20vh;
-    border: 2cm;
+    width: 55vh;
+    height: 10vh;
+    border: solid rgb(2, 2, 2);
     margin-top: 50px;
 }
 #igButton:hover{color: rgb(255, 0, 106); cursor: pointer;border:  solid rgb(255, 0, 166);}
@@ -161,6 +162,11 @@ ul#menu li a {
         width: 70%;
         height: 50%;
     }
-
+    .buttonSocial{
+        border-radius: 10px;
+        width: 20vh;
+        border: 2cm;
+        margin-top: 50px;
+    }
      
 }
