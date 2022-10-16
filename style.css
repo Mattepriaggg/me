@@ -34,7 +34,7 @@
     z-index: 0;
 }
 .cont_1{
-    margin-top: 120px;
+    margin-top: 80px;
     font-size: 30px;
     text-shadow: 2px 2px 5px #7a7a7a;
     padding-left: 20px;
@@ -53,9 +53,12 @@
     display: flex;
     margin-left: 15%;
 }
+.form1{
+    margin-top: 10px;
+}
 
 .fade-in{
-    animation: fadeIn 2s;
+    animation: fadeIn 1s;
 }
 @keyframes fadeIn {
     0%{
@@ -121,7 +124,7 @@
 }
 #service{
     width: 100%;
-    height: 100vh;
+    height: 60vh;
     background-color: rgb(235, 235, 235);
 }
 
@@ -177,7 +180,8 @@ ul#menu li a {
 
 
 #contactme{
-    background-color:rgb(223, 223, 223)}
+    background-color:rgb(164, 164, 164)}
+    
 #name{
     font-size: 30px;
     color: #000000;
@@ -231,6 +235,9 @@ ul#menu li a {
 
 
 @media (max-width: 502px) {
+    h1{
+        scale: 0.8;
+    }
 
     #foto1{
         border-radius: 10%;
@@ -252,5 +259,16 @@ ul#menu li a {
         border: 2cm;
         margin-top: 50px;
     }
-     
+    
+    #message-6797{
+        background-color: rgb(195, 195, 195);
+        border-top-left-radius: 2px;
+        border-end-end-radius: 20px;
+        margin-left: 27px;
+        margin-top: 1%;
+        width: 50%;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+    }
 }
