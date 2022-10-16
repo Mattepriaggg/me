@@ -271,4 +271,7 @@ ul#menu li a {
         justify-content: center; 
         text-align: center;
     }
+    #contactme{
+        display: none;
+    }
 }
