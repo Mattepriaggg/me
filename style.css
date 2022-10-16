@@ -5,6 +5,8 @@
 }
 
 
+
+
 .center{ display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -147,7 +149,7 @@ ul#menu li a {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 502px) {
 
     #foto1{
         border-radius: 10%;
