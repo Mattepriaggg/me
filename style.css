@@ -283,4 +283,7 @@ ul#menu li a {
         scale: 0.9;
         margin-right: 5vh;
     }
+    .menu{
+        height: 80px;
+    }
 }
