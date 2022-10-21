@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 
@@ -24,6 +23,9 @@
     width: 100%;
     margin-top: 10px;
     z-index: 1;
+}
+.menu:hover{
+    text-shadow: 2px 2px 5px #7a7a7a;
 }
 .title{
     font-size: 70px;
@@ -98,13 +100,15 @@
 #ytButton:hover{color: rgb(255, 0, 0); cursor: pointer;border:  solid rgb(255, 0, 0);}
 #scButton:hover{color: rgb(255, 89, 0); cursor: pointer;border:  solid rgb(255, 89, 0);}
 
-/*
+
 .border{
     border: 1px solid red;
 }
-*/
 
 
+#menu{
+    font-weight: bold;
+}
 
 #logoM{
     width: 2vh;
@@ -161,6 +165,9 @@ ul#menu li a {
 
 
 /*form contatti*/
+.form1{
+    margin-top: 20vh;
+}
 #submitButton{
     border-radius: 20px;
     width: 20vh;
@@ -272,5 +279,8 @@ ul#menu li a {
         justify-content: center; 
         text-align: center;
     }
-
+    #menu{
+        scale: 0.9;
+        margin-right: 5vh;
+    }
 }
