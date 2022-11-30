@@ -1,4 +1,4 @@
-*{
+ *{
     margin: 0;
     padding: 0;
 }
@@ -27,6 +27,8 @@
 .sop:hover{
     text-shadow: 2px 2px 5px #7a7a7a;
 }
+
+
 .title{
     font-size: 70px;
     color: black;
@@ -166,7 +168,8 @@ ul#menu li a {
 
 /*form contatti*/
 .form1{
-    margin-top: 20vh;
+    padding-top: 10vh;
+    padding-left: 40vw;
 }
 #submitButton{
     border-radius: 20px;
@@ -236,9 +239,86 @@ ul#menu li a {
     justify-content: center; 
     text-align: center;
 }
-
-
-
+#address-333f{
+    background-color: rgb(195, 195, 195);
+    border-top-left-radius: 2px;
+    border-end-end-radius: 20px;
+    margin-left: 27px;
+    margin-top: 1%;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+#select-66c5{
+    background-color: rgb(195, 195, 195);
+    border-top-left-radius: 2px;
+    border-end-end-radius: 20px;
+    margin-left: 27px;
+    margin-top: 1%;
+    width: 150px;
+    height: 20px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+#date-0019{
+    background-color: rgb(195, 195, 195);
+    border-top-left-radius: 2px;
+    border-end-end-radius: 1px;
+    margin-left: 27px;
+    margin-top: 1%;
+    width: 150px;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+#phone-9292{
+    background-color: rgb(195, 195, 195);
+    border-top-left-radius: 2px;
+    border-end-end-radius: 20px;
+    margin-left: 27px;
+    margin-top: 1%;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+#audioeluci{
+    margin-left: 27px;
+    margin-top: 1vh;
+}
+#audio{
+    margin-left: 27px;
+    margin-top: 1vh;
+}
+#pack{
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #333333;  
+}
+#provincia{
+    margin-top: 20px;
+}
+#p-f{
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #333333;  
+}
+#data{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #333333;  
+}
+#tel{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #333333;  
+}
+#ac{
+    padding-top: 20px;
+    font-size: 20px; 
+}
 
 
 
@@ -286,4 +366,10 @@ ul#menu li a {
     .menu{
         height: 80px;
     }
+    .form1{
+        padding-top: 10vh;
+        padding-left: 10px;
+    }
 }
+
+
