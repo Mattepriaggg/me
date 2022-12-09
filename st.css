@@ -1,4 +1,4 @@
- *{
+*{
     margin: 0;
     padding: 0;
 }
@@ -110,6 +110,8 @@
 
 #menu{
     font-weight: bold;
+    position: relative;
+    top: 5vh;
 }
 
 #logoM{
