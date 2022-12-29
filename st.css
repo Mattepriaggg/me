@@ -180,9 +180,12 @@ ul#menu li a {
 }
 #submitButton{
     border-radius: 20px;
-    width: 20vh;
+    position: absolute;
+    top: 85vh;
+    width: 7vw;
     height: 5vh;
     margin-top: 1vh;
+    transition: all 0.1s cubic-bezier(.215, .61, .355, 1);
 }
 #submitButton:hover{
     border-radius: 20px;
@@ -191,6 +194,7 @@ ul#menu li a {
     margin-top: 1vh;
     cursor:pointer;
     background-color: #7a7a7a74;
+    transition: all 0.1s cubic-bezier(.215, .61, .355, 1);
 }
 
 
@@ -201,17 +205,22 @@ ul#menu li a {
 }
     
 #name{
-    font-size: 30px;
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
 #email{
-    font-size: 30px;
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
 #content{
-    font-size: 30px;
+    font-size: 25px;
+    color: #000000;
+    text-shadow: 2px 2px 5px #333333;  
+}
+#pack{
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
@@ -222,7 +231,7 @@ ul#menu li a {
     border-top-left-radius: 2px;
     border-top-right-radius: 20px;
     margin-left: 50px;
-    height: 30px;
+    height: 4vh;
     width: 200px;
     text-align: center;
     justify-content: center; 
@@ -231,7 +240,7 @@ ul#menu li a {
     background-color: rgb(195, 195, 195);
     border-top-left-radius: 2px;
     margin-left: 50px;
-    height: 30px;
+    height: 4vh;
     width: 200px;
     text-align: center;
     justify-content: center; 
@@ -241,7 +250,7 @@ ul#menu li a {
     border-top-left-radius: 2px;
     border-end-end-radius: 20px;
     margin-left: 27px;
-    margin-top: 1%;
+    margin-top: 1vh;
     align-items: center; 
     justify-content: center; 
     text-align: center;
@@ -251,33 +260,41 @@ ul#menu li a {
     border-top-left-radius: 2px;
     border-end-end-radius: 20px;
     margin-left: 27px;
-    margin-top: 1%;
+    margin-top: 3vh;
     align-items: center; 
     justify-content: center; 
     text-align: center;
+    height: 3vh;
+    width: 10vw;
+    position: relative;
+    left: 1vw;
 }
 #select-66c5{
     background-color: rgb(195, 195, 195);
     border-top-left-radius: 2px;
     border-end-end-radius: 20px;
-    margin-left: 27px;
+    margin-left: 2.5vw;
     margin-top: 1%;
     width: 150px;
-    height: 20px;
+    height: 30px;
     align-items: center; 
     justify-content: center; 
     text-align: center;
+    position: relative;
+    left: 4.9vw;
+    top: -5vh;
 }
 #date-0019{
     background-color: rgb(195, 195, 195);
     border-top-left-radius: 2px;
     border-end-end-radius: 1px;
-    margin-left: 27px;
+    margin-left: 3.3vw;
     margin-top: 1%;
-    width: 150px;
+    width: 15vw;
     align-items: center; 
     justify-content: center; 
     text-align: center;
+    font-size: 15px;
 }
 #phone-9292{
     background-color: rgb(195, 195, 195);
@@ -288,6 +305,9 @@ ul#menu li a {
     align-items: center; 
     justify-content: center; 
     text-align: center;
+    font-size: 15px;
+    width: 20vw;
+    height: 3vh;
 }
 #audioeluci{
     margin-left: 27px;
@@ -298,27 +318,29 @@ ul#menu li a {
     margin-top: 1vh;
 }
 #pack{
-    font-size: 30px;
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
 #provincia{
     margin-top: 20px;
+    font-size: 25px;
 }
 #p-f{
-    font-size: 30px;
+
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
+    font-size: 25px;
 }
 #data{
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
 #tel{
     padding-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
     color: #000000;
     text-shadow: 2px 2px 5px #333333;  
 }
@@ -329,31 +351,8 @@ ul#menu li a {
 
 
 
-@media (max-width: 502px) {
-    h1{
-        scale: 0.8;
-    }
+@media (max-width: 1100px) {
 
-    #foto1{
-        border-radius: 10%;
-        margin-top: 40%;
-        width: 70%;
-        height: 50%;
-    }
-    #foto2{
-        border-radius: 10%;
-        margin-left: 2vh;
-        margin-top: 40%;
-        width: 70%;
-        height: 50%;
-        
-    }
-    .buttonSocial{
-        border-radius: 10px;
-        width: 20vh;
-        border: 2cm;
-        margin-top: 50px;
-    }
     
     #message-6797{
         background-color: rgb(195, 195, 195);
@@ -376,6 +375,36 @@ ul#menu li a {
     .form1{
         padding-top: 10vh;
         padding-left: 10px;
+    }
+    #select-66c5{
+        background-color: rgb(195, 195, 195);
+        border-top-left-radius: 2px;
+        border-end-end-radius: 20px;
+        margin-left: 2.5vw;
+        margin-top: 1%;
+        width: 150px;
+        height: 30px;
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+        position: relative;
+        left: 20vw;
+        top: -5vh;
+    }
+    #phone-9292{
+        background-color: rgb(195, 195, 195);
+        border-top-left-radius: 2px;
+        border-end-end-radius: 20px;
+        width: 30vw;
+    }
+    #submitButton{
+        border-radius: 20px;
+        position: absolute;
+        top: 85vh;
+        width: 20vw;
+        height: 5vh;
+        margin-top: 1vh;
+        transition: all 0.1s cubic-bezier(.215, .61, .355, 1);
     }
 }
 
