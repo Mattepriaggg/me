@@ -14,6 +14,11 @@
     justify-content: center; 
     text-align: center
 }
+.center-none{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
 .chi.sono{
     margin-top: 300px;
 }
@@ -101,6 +106,7 @@
 #igButton:hover{color: rgb(255, 0, 106); cursor: pointer;border:  solid rgb(255, 0, 166);}
 #ytButton:hover{color: rgb(255, 0, 0); cursor: pointer;border:  solid rgb(255, 0, 0);}
 #scButton:hover{color: rgb(255, 89, 0); cursor: pointer;border:  solid rgb(255, 89, 0);}
+#ctButton:hover{color: rgb(0, 0, 0); cursor: pointer;border:  solid rgb(0, 81, 255);}
 
 
 .border{
@@ -123,7 +129,7 @@
     background-color: rgb(226, 226, 226);
 }
 #about{
-    height: 1000px;
+    height: 500px;
     background-color: rgb(226, 226, 226);
 }
 #service{

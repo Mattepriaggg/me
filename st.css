@@ -51,12 +51,7 @@
     float: right;
 }
 
-.foto2_class{
-    width: 50%;
-    height: 30%;
-    display: flex;
-    margin-left: 15%;
-}
+
 
 
 .fade-in{
@@ -72,24 +67,6 @@
     }
 }
 
-
-
-
-
-#foto1{
-    border-radius: 10%;
-    width: 55%;
-    margin-left: 60%;
-    margin-left: 30%;
-    margin-top: 40px;
-    
-}
-#foto2{
-    border-radius: 10%;
-    width: 50%;
-    margin-left: 30%;
-    margin-top: 40px;
-}
 
 .buttonSocial{
     border-radius: 10px;
