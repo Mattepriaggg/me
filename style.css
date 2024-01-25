@@ -1,398 +1,396 @@
- *{
-    margin: 0;
+:root{
+    --color-bg: rgb(28, 49, 66);
+    --widthSocials: 50px;
+}
+
+
+*{
     padding: 0;
+    margin: 0;
+    background-color:  var(--color-bg);
+    /* border: solid red 2px; */
+}
+body{
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    overflow: hidden;
 }
 
-
-.logoIn{
-    display: none;
-    animation: alternate;
-}
-
-.center{ display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center
-}
-.center-none{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-}
-.chi.sono{
-    margin-top: 300px;
-}
-.menu{ position: fixed; 
-    background-color: rgba(255, 255, 255, 0.94); 
-    height: 7%;
-    width: 100%;
-    margin-top: 10px;
-    z-index: 1;
-}
-.sop:hover{
-    text-shadow: 2px 2px 5px #7a7a7a;
-}
-
-
-.title{
-    font-size: 70px;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    top: 10%;
-    z-index: 0;
-}
-.cont_1{
-    margin-top: 20vh;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #7a7a7a;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.cont_2{
-    margin-top: 15vh;
-    font-size: 30px;
-    text-shadow: 2px 2px 5px #7a7a7a;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.sx{
-    float: left;
-}
-.dx{
-    float: right;
-}
-
-.foto2_class{
-    width: 50%;
-    height: 30%;
+.center{ 
     display: flex;
-    margin-left: 15%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 
-.fade-in{
-    animation: fadeIn 1s;
+header{
+    width: 100%;
+    height: 100px;
+
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 30px;
+    
 }
-@keyframes fadeIn {
+.logo-title{
+    position: relative;
+    font-weight: 10px;
+    font-size: 36px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+
+.content-text, .content-text-{
+    width: 300px;
+    position: relative;
+    font-weight: 3px;
+    font-size: 36px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.content-text::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    animation: showRight-text 3s ease infinite;
+    animation-delay: .4s;
+
+}
+
+.cursore{
+    position: relative;
+    top: 50px;
+    height: 50px;
+    width: 10px;
+    background-color: white;
+    left: 0;
+    z-index: 1;
+    border-radius: 20px;
+
+
+    animation: lampeggio 3s ease infinite;
+    animation-delay: .4s;
+}
+
+
+
+
+.img{
+    position: absolute;
+    top: 20px;
+    width: auto;
+    right: 10%;
+    /* border: solid red 2px; */
+
+    z-index: 1;
+
+}
+
+.img-main{ 
+    /* border: solid red 2px; */
+
+}
+.cover-img{
+    position: absolute;
+    background-color: var(--color-bg);
+    opacity: 20%;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 4;
+    /* border: solid red 2px; */
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);  
+}
+.img .cover-img:hover{
+    opacity: 50%;
+    transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+
+
+.social-img{
+    display: flex;
+    color: white;
+    width: 300px;
+    position: relative;
+    top: 100px;
+    font-size: 23px;
+    /* border: solid rgb(73, 43, 43) 2px; */
+}
+.social-img a{
+    width: 100%;
+}
+
+.--img{
+    /* margin-left: 1px; */
+    height: var(--widthSocials);
+    /* border: solid rgb(165, 122, 122) 2px; */
+}
+
+
+@media (max-width: 970px) {
+    .img{
+        position: absolute;
+        top: 324px;
+        left: 0px;
+        width: 400px;
+        margin-left: 50px;
+
+        /* border: solid red 2px; */
+    }
+    
+    .social-img{
+        position: absolute;
+
+        top: 250px;
+        left: 70vw;
+        width: 70px;
+        height: 0px;
+
+        display: grid;
+
+        /* border: solid red 2px; */
+    }
+    .social_img{
+        display: inline;
+
+        width: 100%;
+        margin-top: 10px;
+
+        /* border: solid rgb(196, 127, 127) 2px; */
+    }
+    .--img{
+        width: 100%;
+        height: 70px;
+    }
+
+        
+    .cover-img{
+        left: -26px;
+
+        width: 450px;
+    }
+}
+@media (max-width: 700px) {
+    .img{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .social-img{
+        display: flex;
+        color: white;
+        
+        background-color: transparent;
+        width: 100vw;
+        height: 85px;
+
+        margin-left: 0px;
+
+        position: relative;
+        top: 400px;
+        left: -50px;
+
+        font-size: 23px;
+
+        z-index: 2;
+
+        /* border: solid rgb(73, 43, 43) 2px; */
+    }
+    .social-img a{
+        width: 100%;
+        height: 100%;
+        /* border: solid rgb(176, 155, 155) 2px; */
+    }
+    
+    .--img{
+        width: 70px;
+        height: 65px;
+        margin-top: 10px;
+        /* border: solid rgb(165, 122, 122) 2px; */
+    }
+}
+
+
+
+/* animation */
+
+@keyframes lampeggio{ 
+    /* animazione cursore */
+
+
     0%{
+        left: 0px;
+        opacity: 100%;
+    }
+    3%{
+        left: 5px;
+    }
+
+    10%{
+        left: 65px;
+    }
+    15%{
+        left: 65px;
+        opacity: 100%;
+    }
+
+    17%{
+        left: 80px;
         opacity: 0%;
-        transform: translateY(2vh);
+    }
+    20%{
+        left: 90px;
+        opacity: 0%;
+    }
+
+    30%{
+        left: 95px;
+        opacity: 100%;
+    }
+    35%{
+        left: 95px;
+    }
+
+    37%{
+        left: 100px;
+        opacity: 100%;
+    }
+    40%{
+        left: 100px;
+    }
+
+    45%{
+        left: 140px;
+    }
+    47%{
+        left: 140px;
+    }
+
+    50%{
+        left: 220px;
+        opacity: 100%;
+    }
+    53%{
+        left: 220px;
+        opacity: 100%;
+    }
+
+    58%{
+        left: 250px;
+        opacity: 0%;
+    }   
+
+    60%{
+        opacity: 100%;
+    }
+
+    61%{
+        left: 250px;
+        opacity: 100%;
+    }
+    70%{
+        opacity: 100%;
+    }
+    75%{
+        opacity: 100%;
+    }
+
+    80%{
+        left: 300px;
+        opacity: 0%;
+    }
+
+    85%{
+        left: 300px;
+        opacity: 100%;
+    }
+
+    90%{
+        left: 0%;
+        opacity: 100%;
     }
     100%{
+        left: 0px;
         opacity: 100%;
     }
 }
 
-
-
-
-
-#foto1{
-    border-radius: 10%;
-    width: 55%;
-    margin-left: 60%;
-    margin-left: 30%;
-    margin-top: 40px;
-    
-}
-#foto2{
-    border-radius: 10%;
-    width: 50%;
-    margin-left: 30%;
-    margin-top: 40px;
-}
-
-.buttonSocial{
-    border-radius: 10px;
-    width: 55vh;
-    height: 10vh;
-    border: solid rgb(2, 2, 2);
-    margin-top: 50px;
-}
-#igButton:hover{color: rgb(255, 0, 106); cursor: pointer;border:  solid rgb(255, 0, 166);}
-#ytButton:hover{color: rgb(255, 0, 0); cursor: pointer;border:  solid rgb(255, 0, 0);}
-#scButton:hover{color: rgb(255, 89, 0); cursor: pointer;border:  solid rgb(255, 89, 0);}
-#ctButton:hover{color: rgb(0, 0, 0); cursor: pointer;border:  solid rgb(0, 81, 255);}
-
-
-.border{
-    border: 1px solid red;
-}
-
-
-#menu{
-    font-weight: bold;
-}
-
-#logoM{
-    width: 2vh;
-}
-
-
-#profile{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(226, 226, 226);
-}
-#about{
-    height: 500px;
-    background-color: rgb(226, 226, 226);
-}
-#service{
-    width: 100%;
-    height: 120vh;
-    background-color: rgb(235, 235, 235);
-}
-
-
-#imgdj{
-    width: 20%;
-    border-radius: 50%;
-}
-
-
-
-
-ul#menu li {
-    display: block;
-    margin-left: 5vh;
-    float: left; 
-    font-size: 2vh;
-    font-family: 'Roboto', sans-serif;
-}
-ul#menu li a {
-    color: rgb(0, 0, 0);
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
-#logoPr{
-    width: 3%;
-    margin-left: 50px;
-}
-#logoPr:hover{
-    cursor: auto;
-}
-
-#mail{
-    width: 10vh;
-    position: relative;
-    top: 5vh;
-    left: 40vw;
-}
-
-
-/*form contatti*/
-.form1{
-    padding-top: 10vh;
-    padding-left: 40vw;
-}
-#submitButton{
-    border-radius: 20px;
-    width: 20vh;
-    height: 5vh;
-    margin-top: 1vh;
-}
-#submitButton:hover{
-    border-radius: 20px;
-    width: 20vh;
-    height: 5vh;
-    margin-top: 1vh;
-    cursor:pointer;
-    background-color: #7a7a7a74;
-}
-
-
-#contactme{
-    background-color:rgb(202, 199, 199);
-    width: 100%;
-    height: 30vh;    
-}
-    
-#name{
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#email{
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#content{
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-
-
-#name-6797{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-top-right-radius: 20px;
-    margin-left: 50px;
-    height: 30px;
-    width: 200px;
-    text-align: center;
-    justify-content: center; 
-}
-#email-6797{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    margin-left: 50px;
-    height: 30px;
-    width: 200px;
-    text-align: center;
-    justify-content: center; 
-}
-#message-6797{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-end-end-radius: 20px;
-    margin-left: 27px;
-    margin-top: 1%;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-#address-333f{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-end-end-radius: 20px;
-    margin-left: 27px;
-    margin-top: 1%;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-#select-66c5{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-end-end-radius: 20px;
-    margin-left: 27px;
-    margin-top: 1%;
-    width: 150px;
-    height: 20px;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-#date-0019{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-end-end-radius: 1px;
-    margin-left: 27px;
-    margin-top: 1%;
-    width: 150px;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-#phone-9292{
-    background-color: rgb(195, 195, 195);
-    border-top-left-radius: 2px;
-    border-end-end-radius: 20px;
-    margin-left: 27px;
-    margin-top: 1%;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;
-}
-#audioeluci{
-    margin-left: 27px;
-    margin-top: 1vh;
-}
-#audio{
-    margin-left: 27px;
-    margin-top: 1vh;
-}
-#pack{
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#provincia{
-    margin-top: 20px;
-}
-#p-f{
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#data{
-    padding-top: 20px;
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#tel{
-    padding-top: 20px;
-    font-size: 30px;
-    color: #000000;
-    text-shadow: 2px 2px 5px #333333;  
-}
-#ac{
-    padding-top: 20px;
-    font-size: 20px; 
-}
-
-
-
-@media (max-width: 502px) {
-    h1{
-        scale: 0.8;
+@keyframes showRight-text{
+    5%{
+        width: 85%;
+    }
+    7%{
+        width: 85%;
     }
 
-    #foto1{
-        border-radius: 10%;
-        margin-top: 40%;
+    10%{
+        width: 75%;
+    }
+    15%{
+        width: 75%;
+    }
+
+    17%{
         width: 70%;
-        height: 50%;
     }
-    #foto2{
-        border-radius: 10%;
-        margin-left: 2vh;
-        margin-top: 40%;
+    20%{
         width: 70%;
-        height: 50%;
-        
     }
-    .buttonSocial{
-        border-radius: 10px;
-        width: 20vh;
-        border: 2cm;
-        margin-top: 50px;
-    }
-    
-    #message-6797{
-        background-color: rgb(195, 195, 195);
-        border-top-left-radius: 2px;
-        border-end-end-radius: 20px;
-        margin-left: 27px;
-        margin-top: 1%;
-        width: 50%;
-        align-items: center; 
-        justify-content: center; 
-        text-align: center;
-    }
-    #menu{
-        scale: 0.9;
-        margin-right: 5vh;
-    }
-    .menu{
-        height: 80px;
-    }
-    .form1{
-        padding-top: 10vh;
-        padding-left: 10px;
-    }
-    .cont_1{
-        position: relative;
-        top: -10vh;
 
+    30%{
+        width: 65%;
+    }
+    35%{
+        width: 65%;
+    }
+
+    37%{
+        width: 65%;
+    }
+    40%{
+        width: 65%;
+    }
+
+    45%{
+        width: 53%;
+    }
+    47%{
+        width: 53%;
+    }
+
+    50%{
+        width: 27%;
+    }
+    53%{
+        width: 27%;
+    }
+
+    58%{
+        width: 15%;
+    }
+    61%{
+        width: 15%;
+    }
+
+    80%{
+        width: 0%;
+    }
+
+    85%{
+        width: 100%;
+    }
+    100%{
+        width: 100%;
     }
 }
-
-
