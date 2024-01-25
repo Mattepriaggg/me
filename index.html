@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <style></style>
+        <title>Priamix | Site</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@700&display=swap" rel="stylesheet">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="assets/img/272396170_447941660148262_5049917055597120758_.png">
+
+    </head>
+
+    <header>
+        <a class="logo-title" href="">Priamix.</a>
+    </header>
+
+    <body>
+
+        <div id="follower"></div> 
+
+        <div class="txt">
+            <!-- segue il mouse -->
+            <div id="circle"></div>  
+            
+
+                <div class="cursore"></div>
+            <h1 class="content-text Right-txt">
+                Web Developer
+            </h1>
+
+                <div class="cursore"></div>
+            <h1 class="content-text Right-txt">
+                DJ - Produttore
+            </h1>
+        </div>
+
+        <div class="img center">
+            <div class="cover-img"></div>
+            <img class="img-main" src="assets/img/272396170_447941660148262_5049917055597120758_.png" alt="">
+        </div>
+
+        
+        
+        <div class="social-img">
+            <a class="social_img center"           target="_blank" href="https://www.instagram.com/mattepriaggg_official/">     <img class="--img" id="ig" src="assets/img/svg/Instagram-Glyph-White-Logo.wine-removebg-preview.png" alt=""></a>
+            <a class="social_img center"           target="_blank" href="https://www.youtube.com/channel/UC6ZT0mhwFtRwvtIC_u93vIw"> <img class="--img" id="yt" src="assets/img/svg/YouTube-Icon-White-Logo.wine.svg" alt=""></a>
+            <a class="social_img center" id="mail" target="_blank" href="mailto: mix.pria@gmail.com">                                         <img class="--img" id="email" src="assets/img/svg/mail-5888.png" alt=""></a>
+        </div>
+
+        <!-- <section style="height: 100vh;"></section> -->
+
+
+        <script>
+
+            // mouse img moveming
+            document.addEventListener('DOMContentLoaded', function () {
+                const imgMain = document.querySelector('.img');
+
+                document.addEventListener('mousemove', function (e) {
+                const x = e.clientX - follower.offsetWidth / 2;
+                const y = e.clientY - follower.offsetHeight / 2;
+
+                follower.style.transform = `translate(${x}px, ${y}px)`;
+
+                // Muovi l'immagine in base alla posizione del cursore
+                const imgX = (e.clientX / window.innerWidth) * 100; // Calcola la percentuale orizzontale
+                const imgY = (e.clientY / window.innerHeight) * 100; // Calcola la percentuale verticale
+
+                imgMain.style.transform = `translate(-${imgX/30}%, -${imgY/90}%)`;
+                });
+            });
+
+            // mouse moving follow
+            document.addEventListener('DOMContentLoaded', function () {
+                const follower = document.getElementById('follower');
+
+                document.addEventListener('mousemove', function (e) {
+                    const x = e.clientX - follower.offsetWidth / 2;
+                    const y = e.clientY - follower.offsetHeight / 2;
+
+                    console.log("x -> ", x);
+                    console.log("y -> ", y );
+                    console.log("------------------");
+
+                    let xmeno = window.innerWidth / 19.2;
+                    follower.style.transform = `translate(${x-xmeno- 100}px, ${y-130}px )`;
+                
+                });
+
+            });
+
+
+            // se è telefono apre la mail
+            window.addEventListener('resize', function () {
+                const mailLink = document.getElementById('mail');
+
+                if (window.innerWidth <= 950) {  // Modifica la larghezza in base alle tue esigenze
+                    mailLink.href = 'mailto: mix.pria@gmail.com';
+                } else {
+                    mailLink.href = 'mailto: mix.pria@gmail.com'; // Assegna l'href desiderato per le altre larghezze della finestra
+                }
+            });
+        
+
+            
+        </script>
+    </body>
+
+
+
+
+
+
+
+</html>
+
