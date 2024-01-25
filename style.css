@@ -14,7 +14,7 @@ body{
     padding-left: 10vw;
     padding-right: 10vw;
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .center{ 
@@ -179,21 +179,30 @@ header{
     .cover-img{
         left: -26px;
 
-        width: 450px;
+        width: 400px;
+        /* border: solid red 2px; */
     }
 }
 @media (max-width: 700px) {
+    .img-main{
+        width: 300px;
+    }
+    .cover-img{
+        width: 300px;
+        margin-left: 80px;
+    }
     .img{
         margin-top: 10px;
-        margin-left: 50px;
+        margin-left: 5px;
     }
     .social-img{
         display: flex;
         color: white;
         
         background-color: transparent;
-        width: 100vw;
+        width: 95vw;
         height: 85px;
+        /* border: solid red 2px; */
 
         margin-left: 0px;
 
