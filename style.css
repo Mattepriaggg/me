@@ -185,7 +185,7 @@ header{
 }
 @media (max-width: 700px) {
     .img-main{
-        width: 300px;
+       width: 300px;
     }
     .cover-img{
         width: 300px;
@@ -194,6 +194,7 @@ header{
     .img{
         margin-top: 10px;
         margin-left: 5px;
+        
     }
     .social-img{
         display: flex;
@@ -207,7 +208,7 @@ header{
         margin-left: 0px;
 
         position: relative;
-        top: 400px;
+        top: 300px;
         left: -50px;
 
         font-size: 23px;
