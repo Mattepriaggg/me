@@ -93,7 +93,7 @@ line-separator{
 }
 
 .bio svg {
-    margin-right: 20px;
+    margin-right: 10px;
     height: 30px;
     max-width: 30px;
 
@@ -108,6 +108,8 @@ line-separator{
 
     width: 30px;
     height: 30px;
+
+    margin-right: 35px;
 
     /* border: solid red 2px; */ 
 }
