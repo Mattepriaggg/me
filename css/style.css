@@ -126,6 +126,8 @@ line-separator{
 
 /* mobile */ 
 @media (max-width: 600px) {
+    
+    
     .svg-identify {
         opacity: 0;
     }
