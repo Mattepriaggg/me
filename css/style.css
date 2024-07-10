@@ -1,6 +1,7 @@
 :root {
     --c-main: rgb(41, 41, 41);
     --c-sec:  #00d42e;
+    --c-third: #31723f;
 }
 * {
     margin: 0;
@@ -123,6 +124,14 @@ line-separator{
 }
 
 
+
+.backHome{
+    position: sticky;
+    top: 21px;
+
+    background-color: var(--c-third);
+    
+z-index: 2;}
 
 /* mobile */ 
 @media (max-width: 600px) {
