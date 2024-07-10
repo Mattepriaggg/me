@@ -21,7 +21,7 @@ body {
     overflow-x: hidden;
     background-color: var(--c-main);
 
-    margin: 50px 80px 50px 50px;
+    margin: 50px 50px 50px 50px;
 }
 
 
@@ -78,11 +78,17 @@ line-separator{
 }
 
 
+
+
 .cont-bio {
     border: solid var(--c-sec) 2px;
     
     margin-top: 30px;
-    width: 100%;
+    /* width: 95%; */
+
+    min-width: 200px;
+    max-width: 1200px;
+
     height: auto;
     
     padding: 20px 20px 20px 20px;
@@ -90,6 +96,8 @@ line-separator{
 
     display: flex;
     align-items: center;
+
+    /* border: solid red 2px; */
 }
 
 .bio svg {
@@ -103,13 +111,32 @@ line-separator{
     position: absolute;
     right: 5%;
     margin-top: -20px;
+    margin-right: 35px;
 
     fill: rgb(255, 255, 255);
 
     width: 30px;
     height: 30px;
 
-    margin-right: 35px;
-
+    
     /* border: solid red 2px; */ 
+}
+
+
+
+/* mobile */ 
+@media (max-width: 600px) {
+    .svg-identify {
+        opacity: 0;
+    }
+    .goTo-svg {
+        transform: translate(-20px,0);
+    }
+}
+ 
+@media (max-width: 420px) {
+    .goTo-svg {
+        opacity: 0;
+    }
+
 }
