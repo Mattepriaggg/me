@@ -147,14 +147,16 @@
         #css-svg, #cpp-svg {margin-left: 50px; }
 
 
-        @media (max-width: 420px) {
-            .info-btn {opacity: 0; font-size: 0px}
+        
 
-            .svg-identify{
-                opacity: 0;
-                width: 0px;
-            }
-        }
+@media (max-width: 500px) {
+    .info-btn {opacity: 0; font-size: 0px}
+
+    .svg-identify{
+        opacity: 0;
+        width: 0px;
+    }
+}
 
 
 
