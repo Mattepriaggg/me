@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegenX</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- <login>
+        <h1><a>Register/Login</a></h1>
+    </login> -->
+    <header> 
+        <div id="logo" class="center">
+            <img src="assets/img/legendx-removebg.png" alt="">
+        </div>
+
+        <section class="menu">
+            <ul class="center">
+                <li><a onclick="HomeDo()" id="Home">Home</a></li>
+                <li><a onclick="LavoriDo()" id="Lavori">I nostri lavori</a></li>
+                <li><a onclick="ContattaciDo()" id="Contattaci">Contattaci</a></li>
+                <li><a onclick="CandidatureDo()" id="Candidature">Candidature</a></li>
+            </ul>
+        </section>
+
+        <section onclick="dropMenu()" id="hamburger_menu" class="hamburger_menu center">
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <ul id="hamburger_menu_in" class=" hamburger_menu_in_hidden ">
+            <li><a onclick="HomeDo()" id="HomeMobile">Home</a></li>
+            <li><a onclick="LavoriDo()" id="LavoriMobile">I nostri lavori</a></li>
+            <li><a onclick="ContattaciDo()" id="ContattaciMobile">Contattaci</a></li>
+            <li><a onclick="CandidatureDo()" id="CandidatureMobile">Candidature</a></li>
+        </ul>
+
+    </header>
+    <body>
+        <section id="boxCont" class="center">
+            <div id="cont"></div>
+        </section>
+    </body>
+
+    <script src="proxy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+    <script src="script.js"></script>
+    <script src="webhook.js"></script>
+
+</body>
+</html>
