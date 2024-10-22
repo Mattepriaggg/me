@@ -134,7 +134,9 @@ line-separator{
 z-index: 2;}
 
 /* mobile */ 
-@media (max-width: 600px) {    
+@media (max-width: 600px) {
+    
+    
     .svg-identify {
         opacity: 0;
     }
@@ -143,7 +145,7 @@ z-index: 2;}
     }
 }
  
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     .goTo-svg {
         opacity: 0;
     }

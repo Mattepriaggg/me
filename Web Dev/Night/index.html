@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="created by" content="Priamix">
+        <meta charset="UTF-8">
+        
+        <title>Night</title>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/mail.css">
+
+        
+    </head>
+
+
+    
+
+    <body>
+        <div class="title center">
+            <h1>Night</h1>
+        </div>
+
+        <div id="hamburger_menu" class="">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="menu" class="center menu_close">
+            <ul>
+                <li><a href="#second_sec">Home</a></li>
+                <li><a href="#third_sec">Video</a></li>
+                <li><a href="#third_sec">Contattami</a></li>
+            </ul>
+        </div>
+        
+
+    <div class="sec_all ">
+        <section id="first_sec" class="metaW center">
+            <div id="first_div"></div>
+            <img src="foto_profilo.png" alt="">
+            <div id="second_div"></div> 
+        </section>
+        <section class="sec_one">
+            <section id="second_sec" class=" center">
+                <div class="content">
+                    <h1>BIO</h1>
+                    <p>
+                        Night è un talentuoso grafico professionista e video editor con una passione per la creazione di contenuti visivi coinvolgenti e di alta qualità. Con una vasta esperienza nel settore del design grafico e dell'editing video, Night porta un tocco unico e creativo a ogni progetto a cui lavora.
+
+                        Specializzato in progetti di branding, motion graphics e produzione video, Night ha collaborato con una varietà di clienti per trasformare le loro idee in visivi straordinari. La sua attenzione ai dettagli e la capacità di cogliere l'essenza di un marchio o di un messaggio lo rendono un collaboratore prezioso per qualsiasi progetto creativo.
+
+                        Night è noto per il suo stile distintivo e la capacità di portare un'idea dalla fase concettuale alla realizzazione finale in modo fluido ed efficace. Con una passione per l'innovazione e la sperimentazione, Night si impegna costantemente a rimanere al passo con le ultime tendenze del settore per offrire ai suoi clienti risultati di alto livello.
+
+                        Quando non è immerso nel mondo del design e dell'editing video, Night ama esplorare nuove tecniche creative, collaborare con altri professionisti del settore e condividere la sua conoscenza attraverso tutorial e contenuti online. Seguite Night nel suo viaggio artistico e lasciatevi ispirare dalla sua creatività senza confini! 🌙🎨🎥
+
+
+                    </p>
+                </div>
+            </section>
+    
+
+            <section id="third_sec" class="center">
+                <video controls>
+                    <source src="videos/3.mp4" type="video/mp4">
+                    Il tuo browser non supporta il video.
+                </video>
+                <video controls>
+                    <source src="videos/3_1.mp4" type="video/mp4">
+                    Il tuo browser non supporta il video.
+                </video>
+                <video controls>
+                    <source src="videos/3_2.mp4" type="video/mp4">
+                    Il tuo browser non supporta il video.
+                </video>
+                <video controls>
+                    <source src="videos/3_3.mp4" type="video/mp4">
+                    Il tuo browser non supporta il video.
+                </video>
+    
+            </section>
+        
+        </section>
+
+        <section id="fourth_sec" class="center">
+            <form id="form" class="center_column">
+                <div class="field">
+                    <label for="from_name">IL TUO NOME:</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="from_mail">LA TUA MAIL:</label>
+                    <input type="text" name="from_mail" id="from_mail">
+                </div>
+                <div class="field">
+                    <label for="message">MESSAGGIO:</label>
+                    <textarea type="text" name="message" id="message"></textarea>
+                </div>
+                
+                <input type="submit" id="button" value="Invia Email" >
+            </form>
+        </section>
+    </div>
+
+                  
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+    emailjs.init('M70jPPH-NE_KruV9-')
+    </script>
+
+</div>
+
+
+
+<footer style="position: fixed;">
+    <p><a id="ref_priamixCopy" target="_blank" href=""></a></p>
+</footer>
+
+    </body>
+    
+    <script class="u-script" type="text/javascript" src="script.js" defer=""></script> 
+    <script type="text/javascript" src="js/mail.js"></script>
+</html>
