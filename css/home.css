@@ -53,6 +53,10 @@
 
     }
 
+    .social a img {
+        height: 100%;
+    }
+
         .social a {
             filter: drop-shadow(0 0 5% none); 
             transition: filter 1s ease-out; 
