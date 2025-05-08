@@ -142,6 +142,7 @@ z-index: 2;}
     }
     .goTo-svg {
         transform: translate(-20px,0);
+        opacity: 0;
     }
 }
  
