@@ -49,12 +49,12 @@ function inviaEmail(luogo) {
         return;
     }
 
-    emailjs.send("service_azwqfrc", "template_9vczhb4", parametri)
-        .then(function(response) {
-            alert("Mail inviata con successo!");
-        }, function(error) {
-            alert("Errore durante l’invio: " + JSON.stringify(error));
-        });
+    // emailjs.send("service_azwqfrc", "template_9vczhb4", parametri)
+    //     .then(function(response) {
+    //         alert("Mail inviata con successo!");
+    //     }, function(error) {
+    //         alert("Errore durante l’invio: " + JSON.stringify(error));
+    //     });
 }
 
 
