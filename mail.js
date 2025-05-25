@@ -1,6 +1,12 @@
 
-confirm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta il proprietario del sito. Per sapere di più, leggi la privacy policy di questo sito.");
 
+
+window.onload = function() {
+    setTimeout(function() {
+        alarm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta il proprietario del sito. Per sapere di più, leggi la privacy policy di questo sito.");
+    }, 1000);
+    
+}
 
 
 // creato con EmailJS
@@ -8,6 +14,12 @@ document.getElementById('myForm').addEventListener('submit', async function(e) {
     e.preventDefault();
 
     var luogo = await getLocationString();  
+
+    if(luogo == "Posizione non disponibile" || luogo == "Geolocalizzazione non supportata") {
+        alert("Non è stato possibile ottenere la tua posizione. Assicurati di aver concesso i permessi di geolocalizzazione al sito o rivolgiti direttamente al DJ per la richiesta.");
+        return;
+    }
+
     console.log("Luogo rilevato:", luogo);
     inviaEmail(luogo); 
 });
