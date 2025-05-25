@@ -1,8 +1,6 @@
 
 window.onload = function() {
-    setTimeout(function() {
-        alarm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta direttamente il dj per la richiesta.");
-    }, 500);
+    alarm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta direttamente il dj per la richiesta.");
     
 }
 
