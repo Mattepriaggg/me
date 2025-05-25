@@ -1,5 +1,5 @@
 
-// confirm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta il proprietario del sito. Per sapere di più, leggi la privacy policy di questo sito.");
+confirm("Attenzione! questa pagina utilizza la tua posizione per compilare il form per questioni di sicurezza e evitare spam. Se non vuoi che venga utilizzata la tua posizione, chiudi questa pagina e contatta il proprietario del sito. Per sapere di più, leggi la privacy policy di questo sito.");
 
 
 
