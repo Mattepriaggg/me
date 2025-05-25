@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Priamix">
+    <meta name="name" content="Priamix site">
+
+    <title>Priamix | site</title>
+    <link rel="shortcut icon" href="icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="richieste.css">
+
+    <!-- Font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+
+    
+</head>
+
+
+
+<body>
+    <!-- https://elements.envato.com/noxfolio-portfolio-resume-wordpress-theme-RHDEX3T -->
+
+    
+    <h1 class="info-btn center" id="info-btn">i</h1>
+    <div class="info hover-shadow" id="info">
+        <ul style="margin-left: 20px;">
+            <li><p class="hover-curosr">Press Alt+Shift+Wheel up <br></p>
+                <p class="hover-curosr"> Press Alt+Shift+Wheel down</p> </li>
+        </ul>
+        
+    </div>
+
+    <div id="box-img">
+        <a id="a-main-img" href=""><img id="main-img" src="img/profile.jpg" alt=""></a>
+    </div>
+
+    <div id="form_richieste">
+        <form id="myForm">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" required> 
+
+            <label for="canzone">Titolo della canzone e Artista</label> 
+            <input id="canzone" name="canzone" type="text" required>
+
+            <label for="dove">Dove ti trovi (facoltativo)</label> 
+            <input id="dove" name="dove" type="text" value="vicino la consolle">
+
+            <label for="reply">Inserisci la tua mail o contatto (facoltativo)</label>
+            <input type="text" id ="reply" name="reply">
+
+
+
+                <!-- Campi nascosti -->
+                <input type="hidden" name="latitude" id="latitude">
+                <input type="hidden" name="longitude" id="longitude">
+                <input type="hidden" name="city" id="city">
+                <input type="hidden" name="country" id="country">
+
+            <input id="submit" type="submit" value="INVIA">
+
+            <a style="justify-content: center;" href="index.html" class="cont-bio">Torna alla home</a>
+        </form>
+    </div>
+    
+
+
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+    <!-- Fogli google -->
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+            const formData = new FormData(this);
+
+            fetch('https://script.google.com/macros/s/AKfycbzrkNv78wQBorl4_onn1iLiYnczHFVA4fFZoU_gFg52SQQ3ooJjPjDUul2OqO4u1smkug/exec', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('result').innerText = text;
+                this.reset();
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Errore: ' + error.message;
+            });
+        });
+
+    </script>
+
+
+<!-- MAIL -->
+    <script src="mail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "gs2NywfF3uc76nCPq",
+            });
+        })();
+    </script>
+    
+</body>
+</html>
+

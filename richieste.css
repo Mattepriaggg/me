@@ -1,0 +1,64 @@
+form {
+    padding: 45px;
+    border: solid rgb(0, 255, 123) 2px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px #01fd3447;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+
+    input {
+        margin-bottom: 20px;
+    }
+    label {
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    input{
+        background-color: transparent;
+        color: white;
+
+        border: none;
+        border-bottom: solid rgb(0, 255, 123) 2px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    input:focus {
+        outline: none;
+        border: none;
+        border-color: rgb(24, 233, 125);
+        box-shadow: 0 0 10px rgba(0, 255, 123, 0.5);
+    }
+
+    
+    #submit {
+        background-color: rgba(0, 255, 153, 0.335);
+        color: rgb(255, 255, 255);
+        border: solid rgb(0, 255, 123) 2px;
+        padding: 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    #submit:hover {
+        background-color: rgba(0, 255, 123, 0.8);
+        color: black;
+
+    }
+
+}
+
+#form_richieste {
+    /* border: solid rgb(255, 255, 255) 2px; */
+
+    height: 60vh;
+    min-height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
