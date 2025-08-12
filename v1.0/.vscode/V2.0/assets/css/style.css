@@ -1,0 +1,31 @@
+:root {
+    --blue-color: blue;
+    --blue-hite-color: rgb(84, 84, 233);
+    --hite: white;
+    --button-color: rgb(130, 130, 255);
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+body {
+    padding: 0 200px;
+    background-color: var(--blue-color);
+}

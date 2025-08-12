@@ -1,0 +1,182 @@
+<html lang="it">
+    <head>
+        <title>portfolio priamix</title>
+
+        <meta charset="utf-8">
+        <meta name="author" content="Matteo">
+        <meta name="description" content="Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        
+    </head>
+    
+    <header class="">
+        <!-- <select id="languageSwitcher">
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+        </select> -->
+        <img id="logo" src="assets/img/logo.png" alt="logo">
+        
+        <nav class="center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#competenze" data-i18n="competenze" >Competenze</a></li>
+            <li><a href="#riguardo" data-i18n="riguardo">Riguardo</a></li>
+            <li><a href="#contattami" data-i18n="contattami">Contattami</a></li>
+        </nav>
+        
+        <div class="hamburger_menu" id="hamburger_menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>         
+        </div>
+
+        <!-- possibilità di cambiare tema -->
+         <!-- e anche multilingua -->
+    </header>
+
+    <body>
+
+        <section class="hero">
+            <div id="hero-name" class="center">
+                <h1 class="" aria-label="matteo" >Matteo</h1>
+                <h1 aria-label="priamix">Priamix</h1>
+
+                <p data-i18n="hero.description">sviluppatore web, designer web, produttore musicale</p>
+            </div>
+            
+            <div id="hero-image" class="center">
+                <div class="circle">
+                    <img alt="profile_image" src="assets/img/profilo.png" alt="">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="competenze" class="competenze center">
+            <div class="card">
+                <h2>HTML CSS JS</h2>
+
+                <a aria-label="html css js card" href="">
+                    <svg width="100px" height="100px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>file_type_html</title><polygon points="5.902 27.201 3.655 2 28.345 2 26.095 27.197 15.985 30 5.902 27.201" style="fill:#e44f26"/><polygon points="16 27.858 24.17 25.593 26.092 4.061 16 4.061 16 27.858" style="fill:#f1662a"/><polygon points="16 13.407 11.91 13.407 11.628 10.242 16 10.242 16 7.151 15.989 7.151 8.25 7.151 8.324 7.981 9.083 16.498 16 16.498 16 13.407" style="fill:#ebebeb"/><polygon points="16 21.434 15.986 21.438 12.544 20.509 12.324 18.044 10.651 18.044 9.221 18.044 9.654 22.896 15.986 24.654 16 24.65 16 21.434" style="fill:#ebebeb"/><polygon points="15.989 13.407 15.989 16.498 19.795 16.498 19.437 20.507 15.989 21.437 15.989 24.653 22.326 22.896 22.372 22.374 23.098 14.237 23.174 13.407 22.341 13.407 15.989 13.407" style="fill:#fff"/><polygon points="15.989 7.151 15.989 9.071 15.989 10.235 15.989 10.242 23.445 10.242 23.445 10.242 23.455 10.242 23.517 9.548 23.658 7.981 23.732 7.151 15.989 7.151" style="fill:#fff"/></svg>
+                </a>
+                
+            </div>  
+            <div class="card">
+                <h2>C/C++</h2>
+
+                <a aria-label="c c++ card" href="index.html">
+                    <svg width="100px" height="100px" viewBox="-16 0 288 288" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                        <g>
+                            <path d="M255.987,85.672 C255.985,80.829 254.95,76.55 252.858,72.878 C250.803,69.266 247.724,66.24 243.596,63.846 C209.515,44.176 175.401,24.566 141.332,4.876 C132.147,-0.431 123.241,-0.238 114.124,5.146 C100.559,13.154 32.643,52.102 12.405,63.835 C4.071,68.665 0.015,76.056 0.013,85.663 C0,125.221 0.013,164.777 0,204.336 C0.002,209.072 0.993,213.268 2.993,216.886 C5.049,220.606 8.17,223.716 12.394,226.164 C32.633,237.897 100.558,276.842 114.12,284.852 C123.241,290.239 132.147,290.431 141.335,285.122 C175.405,265.431 209.521,245.822 243.607,226.152 C247.831,223.705 250.952,220.593 253.008,216.876 C255.005,213.258 255.998,209.062 256,204.325 C256,204.325 256,125.231 255.987,85.672" fill="#A9B9CB"></path>
+                            <path d="M141.101,5.134 C131.931,-0.16 123.04,0.033 113.938,5.403 C100.395,13.39 32.59,52.237 12.385,63.94 C4.064,68.757 0.015,76.129 0.013,85.711 C0,125.166 0.013,164.62 0,204.076 C0.002,208.8 0.991,212.985 2.988,216.593 C5.041,220.304 8.157,223.406 12.374,225.847 C17.003,228.528 24.133,232.635 32.533,237.467 L219.625,50.375 C193.447,35.301 167.262,20.239 141.101,5.134" fill="#7F8B99"></path>
+                            <path d="M154.456,126.968 L194.295,127.249 C194.295,110.65 177.493,70 129.322,70 C98.631,70 57.371,89.512 57.371,145.61 C57.371,201.707 97.818,220 129.322,220 C180.339,220 192.532,184.698 192.532,164.748 L154.525,162.575 C154.525,162.575 155.542,185.65 129.119,185.65 C104.729,185.65 100.659,155.772 100.659,145.61 C100.659,130.163 106.152,105.366 129.119,105.366 C152.087,105.366 154.456,126.968 154.456,126.968" fill="#FFFFFF"></path>
+                        </g>
+                    </svg>
+                </a>
+                
+            </div>
+
+            <div class="card">
+                <h2>JAVA</h2>
+
+                <a aria-label="java card" href="index.html">
+                    <svg width="100px" height="100px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+                    <path d="M16.0497 8.44062C22.6378 3.32607 19.2566 0 19.2566 0C19.7598 5.28738 13.813 6.53583 12.2189 10.1692C11.1312 12.6485 12.9638 14.8193 16.0475 17.5554C15.7749 16.9494 15.3544 16.3606 14.9288 15.7645C13.4769 13.7313 11.9645 11.6132 16.0497 8.44062Z" fill="#E76F00"/>
+                    <path d="M17.1015 18.677C17.1015 18.677 19.0835 17.0779 17.5139 15.3008C12.1931 9.27186 23.3333 6.53583 23.3333 6.53583C16.5317 9.8125 17.5471 11.7574 19.2567 14.1202C21.0871 16.6538 17.1015 18.677 17.1015 18.677Z" fill="#E76F00"/>
+                    <path d="M22.937 23.4456C29.0423 20.3258 26.2195 17.3278 24.2492 17.7317C23.7662 17.8305 23.5509 17.9162 23.5509 17.9162C23.5509 17.9162 23.7302 17.64 24.0726 17.5204C27.9705 16.1729 30.9682 21.4949 22.8143 23.6028C22.8143 23.6029 22.9088 23.5198 22.937 23.4456Z" fill="#5382A1"/>
+                    <path d="M10.233 19.4969C6.41312 18.9953 12.3275 17.6139 12.3275 17.6139C12.3275 17.6139 10.0307 17.4616 7.20592 18.8043C3.86577 20.3932 15.4681 21.1158 21.474 19.5625C22.0984 19.1432 22.9614 18.7798 22.9614 18.7798C22.9614 18.7798 20.5037 19.2114 18.0561 19.4145C15.0612 19.6612 11.8459 19.7093 10.233 19.4969Z" fill="#5382A1"/>
+                    </svg>
+                </a>
+                
+            </div>
+
+            <h2 style="width: 100%; margin-top: 40px; opacity: 60%;">competenze aggiuntive</h1>
+            <div class="compAggiuntive center" id="cards">
+                <div class="card c-com">
+                    <h2>Unity 2D</h2>
+                        <img alt="unity icon" src="assets/img/icon/icons8-unity.svg" alt="">
+                </div>
+                
+                <div class="card c-com">
+                    <h2>AUTOCAD 2D</h2>
+                        <img alt="autodesk icon" src="assets/img/icon/autodesk-svgrepo-com.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>C# base</h2>
+                        <img alt="c# icon" src="assets/img/icon/icons8-c-sharp-logo.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>Google sheets</h2>
+                        <img alt="google sheets icon" src="assets/img/icon/icons8-google-sheets.svg" alt="">
+                </div>
+    
+                <div class="card c-com">
+                    <h2>Google Forms</h2>
+                        <img alt="google forms icon" src="assets/img/icon/icons8-google-forms.svg" alt="">
+                </div>
+    
+    
+                <div class="card c-com">
+                    <h2>Google Slides</h2>
+                        <img alt="google slides icon" src="assets/img/icon/icons8-google-slides.svg" alt="">
+                </div>
+                
+                <div class="card c-com">
+                    <h2>Canva</h2>
+                        <img alt="canva icon" src="assets/img/icon/icons8-canva.svg" alt="">
+                </div>
+            </div>           
+
+        </section>
+
+        <section class="riguardo" id="riguardo">
+            <h1>Riguardo me</h1>
+            <br>
+            <p data-i18n="riguardo.p">
+                💻 Matteo è uno studente tecnico informatico di Piove di Sacco(PD) con una passione per la programmazione e il design di siti web.
+                Ha iniziato a programmare all' età di 15 anni, appen ainiziati gli studi tecnici, e da allora ha continuato a migliorare le sue competenze e imparare nuove tecnologie.
+                Nel corso degli anni, ha lavorato su diversi progetti, sia personali che per aziende e artisti emergenti, creando siti web funzionali e accattivanti.
+                Matteo è sempre alla ricerca di nuove sfide e opportunità per mighliorare le sue abilità in questo campo. 🚀
+                <br><br>
+                🎧 Oltre alla programmazione, Matteo ha anche una passione per la muisica e la produzione musicale e produzione di tracce audio. Ha frequentato un corso musicale specializzato nello strumento Pianoforte, aumentando così le proprie capacità e competenze. 🎶
+            </p>
+        </section>
+        
+        <section class="contattami" id="contattami">
+            <h1>Contattami</h1>
+
+            <h2>Mail <a aria-label="matteopriarolo@gmail.com" target="_blank" href="mailto:matteopriarolo@gmail.com">✉️ <i>matteopriarolo@gmail.com</i></a></h2>
+            <h2>Instagram <a aria-label="mattepriagggofficial" target="_blank" href="https://instagram.com/mattepriaggg_official"> 📲 <i>@mattepriaggg_official</i></a></h2>
+
+
+            <!-- <form action="" id="form" class="center">
+                <label for="">Nome: *</label>
+                <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required> 
+
+                <label for="">Email: *</label>
+                <input type="text" id="email" name="email" placeholder="Inserisci la tua mail" required> 
+
+                <label for="">Messaggio: </label>
+                <textarea type="" id="messaggio" name="messaggio" placeholder="Inserisci il tuo messaggio"> </textarea>    
+                
+                
+                <input class="button" type="submit" value="Invia" id="submit" style="cursor: pointer;">
+            </form> -->
+        </section> 
+
+        <!-- <script type="text/javascript">
+            import emailjs from 'https://cdn.emailjs.com/sdk/3.11/email.min.js';
+            emailjs.init('gs2NywfF3uc76nCPq');
+        </script> -->
+
+    </body>
+
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/translate.js"></script>
+
+    <!-- <script src="assets/js/mail.js"></script> -->
+
+</html>

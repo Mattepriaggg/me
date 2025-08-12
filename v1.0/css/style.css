@@ -1,0 +1,154 @@
+:root {
+    --c-main: rgb(41, 41, 41);
+    --c-sec:  #00d42e;
+    --c-third: #31723f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+h1, h2, h3, p, a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.center{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--c-main);
+
+    margin: 50px 50px 50px 50px;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #00cb0036;
+    border-radius: 6px;
+}
+::-webkit-scrollbar:hover {
+    background: #00cb004d;
+    width: 10px;
+}
+
+
+
+
+
+/* Cursor Follow */
+.line { 
+    position: absolute;
+    height: 2px;
+    background-color: var(--c-sec);
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    display: none;
+
+    width: 50px; 
+}
+    #line {
+        border-radius: 10%;
+    }
+
+
+
+
+
+.line-sep{
+    margin-top: 30px;
+    /* border: solid red 2px; */
+    width: 100%;
+}
+line-separator{
+    width: 90%;
+    background-color: var(--c-sec);
+    height: 5px;
+    border-radius: 50px;
+}
+
+
+
+
+.cont-bio {
+    border: solid var(--c-sec) 2px;
+    
+    margin-top: 30px;
+    /* width: 95%; */
+
+    min-width: 200px;
+    max-width: 100%;
+
+    height: auto;
+    
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    /* border: solid red 2px; */
+}
+
+.bio svg {
+    margin-right: 10px;
+    height: 30px;
+    max-width: 30px;
+
+    /* border: solid red 2px; */
+}
+.cont-bio .goTo-svg {
+    position: absolute;
+    right: 5%;
+    margin-top: -20px;
+    margin-right: 35px;
+
+    fill: rgb(255, 255, 255);
+
+    width: 30px;
+    height: 30px;
+
+    
+    /* border: solid red 2px; */ 
+}
+
+
+
+.backHome{
+    position: sticky;
+    top: 21px;
+
+    background-color: var(--c-third);
+    
+z-index: 2;}
+
+/* mobile */ 
+@media (max-width: 600px) {
+    
+    
+    .svg-identify {
+        opacity: 0;
+    }
+    .goTo-svg {
+        transform: translate(-20px,0);
+        opacity: 0;
+    }
+}
+ 
+@media (max-width: 420px) {
+    .goTo-svg {
+        opacity: 0;
+    }
+
+}

@@ -1,0 +1,183 @@
+/* cont-bio su style.css */
+
+
+#box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+    #a-main-img {
+        width: auto;
+        height: auto;
+    }
+    #main-img {
+        border: solid var(--c-sec) 2px;
+        width: 200px;
+        scale: 1.0;
+
+        border-radius: 50%;
+        transition: scale 0.2s ease-in;
+    }
+    #main-img:hover {
+        
+        scale: 1.1;
+        border-radius: 50%;
+
+        transition: scale 0.2s ease-in;
+    }
+
+
+.social{
+    /* border: solid red 2px; */
+    margin-top: 20px;
+    width: 100%;
+    height: 50px;
+
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+    .social a img {
+        height: 100%;
+    }
+
+        .social a {
+            filter: drop-shadow(0 0 5% none); 
+            transition: filter 1s ease-out;
+            /* border: solid rgb(250, 250, 250) 2px; */
+            margin: 0px 10px 0px 10px; 
+
+            height: 100%; width: 10%;
+            scale: 1;
+            font-size: 50px;
+    
+            color: white;
+        }
+        .social a:hover {
+            transition: filter 0.2s ease-in-out;
+            filter:drop-shadow(0px 0px 2px var(--c-sec));
+
+            cursor: pointer;
+
+            /* border: solid rgb(241, 142, 142) 2px; */
+        }
+
+
+
+
+.info-btn { font-family: "Recursive", sans-serif; color: var(--c-sec); width: 40px; transition: color .2s ease-in-out; cursor: pointer;}
+    .info {opacity: 0; position: absolute; width: 0px; padding-top: 0px; color: white; font-size: 0;}
+        .info p {
+            width: 100%;
+            transition: all .2s ease-in-out;
+            cursor: none;
+        }
+        .info li{
+            margin-bottom: 10px;
+        }
+
+    .info-btn:hover + .info, .info:hover{
+        /* border: solid red 2px; */
+        opacity: 1;
+        width: auto;
+        font-size: 15px;
+        padding-top: 10px;
+
+        transition: all .2s ease-in-out;
+    }
+    .info-btn:hover{
+        color: rgb(0, 0, 0);
+        text-shadow: 0px 0px 5px var(--c-sec);
+
+        transition: all .2s ease-in-out;
+    }
+
+
+    @keyframes TSeparate {
+        0%{
+            width: 0%;
+        }
+        12%{ /*M*/
+            width: 40px;
+        }
+        28%{ /*a*/
+            width: 65px;
+        }
+        40%{ /*t*/
+            width:85px;
+        }
+        44%{ /*t*/
+            width:105px;
+        }
+        60%{ /*e*/
+            width:105px;
+        }
+        72%{ /*o*/
+            width:132px;
+        }
+        84%{
+            width: 160px;
+        }
+        90%{
+            width: 160px;
+        }
+        100%{
+            width: 0%;
+        }
+    }
+#name {
+    color: transparent;
+    /* transition: color 2s; */
+    -webkit-text-stroke: 1px var(--c-sec); /* Contorno del testo */
+    max-width: fit-content;
+
+    font-size: 50px;
+
+    /* border: solid red 2px; */
+}
+#name-up {
+    /* border: solid red 2px; */
+
+    color: var(--c-sec);
+    position: relative;
+    top: -57px;
+    width: fit-content;
+    font-size: 50px;
+
+    animation: TSeparate 4s infinite;
+
+    display: inline-block;
+    transition: width 0.5s, opacity 0.5s;
+    white-space: nowrap; /* Impedisce al testo di andare a capo */
+    overflow: hidden; /* Nasconde il testo che va oltre la larghezza */
+}
+
+.bio {
+    /* border: solid red 2px; */
+    margin-top: -40px;
+}
+    #html-svg, #css-svg, #figma-svg, #c-svg, #cpp-svg, .svg-identify {
+        position: absolute;
+        left: 320px;
+    }
+        #css-svg, #cpp-svg {margin-left: 50px; }
+
+
+        @media (max-width: 650px) {
+            .info-btn {opacity: 0; font-size: 0px}
+
+            .svg-identify{
+                opacity: 0;
+                width: 0px;
+            }
+
+            .social a{
+                width: 100%;
+                /* border: solid red 2px; */
+            }
+        }
