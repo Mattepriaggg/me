@@ -214,13 +214,17 @@ header {
 
     opacity: 60%;
 }
+    .compAggiuntive .cards {
+        display: flex;
+        flex-direction: row;
+        animation: scroll-x 5s linear infinite;
+        border: solid red 2px;
+    }
     .compAggiuntive .card {
         position: relative;
         box-sizing: border-box;
         margin: 0 10px;
         height: 120px;
-
-        animation: scroll-x 30s linear infinite;
     }
     .compAggiuntive:has(.card:hover) .card {
         animation-play-state: paused;
@@ -231,10 +235,10 @@ header {
 
 @keyframes scroll-x {
     0% {
-        transform: translateX(650%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-700%);
+        transform: translateX(-100%);
     }
 }
 
