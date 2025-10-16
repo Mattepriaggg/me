@@ -49,6 +49,11 @@ svg {
 h1 {
     font-size: 70px;
 }
+@media (max-width: 502px) {
+    h1 {
+        font-size: 40px;
+    }
+}
 li, a {text-decoration: none; color: white;}
 li {
     list-style: none;
@@ -217,8 +222,8 @@ header {
     .compAggiuntive .cards {
         display: flex;
         flex-direction: row;
-        animation: scroll-x 5s linear infinite;
-        border: solid red 2px;
+        animation: scroll-x 15s linear infinite;
+        /* border: solid red 2px; */
     }
     .compAggiuntive .card {
         position: relative;
@@ -235,10 +240,10 @@ header {
 
 @keyframes scroll-x {
     0% {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
     100% {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
 }
 
