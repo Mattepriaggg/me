@@ -219,6 +219,10 @@ header {
 
     opacity: 60%;
 }
+    .compAggiuntive:hover .cards,
+    .compAggiuntive:has(.card:hover) .cards {
+        animation-play-state: paused;
+    }
     .compAggiuntive .cards {
         display: flex;
         flex-direction: row;
